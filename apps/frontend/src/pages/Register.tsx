@@ -110,8 +110,9 @@ const Register = () => {
     return (
         <div className="flex flex-col items-center justify-center min-h-screen bg-gray-900 text-white">
             <div className="bg-gray-800 p-8 rounded-lg shadow-lg w-full max-w-md">
-                <h1 className="text-3xl font-bold text-center text-blue-400 mb-6">Register</h1>
-
+                <img src = "app_logo.png"></img>
+                <br/>
+                <br/>
                 <input
                     type="text"
                     placeholder="Name"

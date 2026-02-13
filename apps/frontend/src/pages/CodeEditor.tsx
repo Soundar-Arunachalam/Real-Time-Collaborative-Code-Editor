@@ -7,7 +7,7 @@ import { socketAtom } from "../atoms/socketAtom";
 import { useNavigate, useParams } from "react-router-dom";
 import { connectedUsersAtom } from "../atoms/connectedUsersAtom";
 import { IP_ADDRESS } from "../Globle";
-
+import logo from "../assets/app_logo.png";
 const CodeEditor: React.FC = () => {
   const [code, setCode] = useState<any>("// Write your code here...");
   const [language, setLanguage] = useState("javascript");
@@ -266,7 +266,8 @@ const CodeEditor: React.FC = () => {
           {/* Left Side: Code Editor */}
           <div className="w-full lg:w-3/4">
             <div className="flex justify-between mb-4 lg:px-3">
-              <label className="text-white text-2xl lg:text-3xl">Code Together</label>
+              <img src = {logo} style={{width: "120px", }}alt = "image logo"></img>
+
               <div className="flex gap-3">
                 {/* Submit Button */}
                 <div className="flex justify-center">
